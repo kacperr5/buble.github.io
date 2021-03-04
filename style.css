@@ -34,9 +34,20 @@ li a {
     text-align: center;
     padding: 21px 16px;
     text-decoration: none;
-    color: aliceblue;
+    color: aliceblue
+    
+    
 }
 
+
+li a: {
+    display: block;
+    text-align: center;
+    padding: 21px 16px;
+    text-decoration: none;
+    color: white;
+    
+}
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
@@ -143,4 +154,17 @@ margin: 5px
 .main-logo {
     height: 40%;
     width: 40%;
+}
+
+.main-img {
+    box-shadow: 3px 4px 10px;
+    transition: transform .2s;
+    
+}
+
+.main-img: {
+    transform: scale(1.3);
+    margin-left: 80px;
+        
+    
 }
