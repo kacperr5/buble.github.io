@@ -1,0 +1,148 @@
+body {
+font-family: 'Quicksand', sans-serif;
+font-size: 1rem;
+font-weight: 400;
+color: #34383c;
+text-align: left;
+margin: 0;
+background: #F4F4F4;
+    
+}
+.dark-mode {
+    background: #34383c;
+    color: aliceblue;
+}
+
+
+.navbar-brand {
+display: inline-block;
+padding-top: .3125rem;
+padding-bottom: .3125rem;
+font-size: 33px;
+line-height: inherit;
+white-space: nowrap;
+}
+.d-inline-block {
+display: inline-block!important;
+}
+.rounded-circle {
+border-radius: 50%!important;
+}
+img {
+vertical-align: middle;
+border-style: none;
+margin: 5px
+}
+
+
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+.topnav-right {
+  float: right;
+}
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+.material-icons {
+    padding: 12px 0;
+    text-align: center;
+    margin: 6px;
+}
+
+.material-icons:hover {
+    background: rgba(76, 175, 80, 0.0);
+    color: black;
+    transition: 0,75s;
+        
+}
+
+.h1 {
+    text-align: center;
+    text-align: center;
+    
+}
+.main2 {
+    padding: 16px;
+    margin-top: 60px;
+    text-align: center
+}
+
+.main-logo {
+    height: 40%;
+    width: 40%;
+}
+
+
+.button-index {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: #0099ff;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
