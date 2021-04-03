@@ -146,11 +146,3 @@ ul {
   .dropdown:hover .dropdown-content {
     display: block;
   }
-
-.ul2 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #0099ff;
-}
