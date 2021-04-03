@@ -101,7 +101,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333ff3;
+    background-color: #333;
   }
   
   li {
@@ -147,9 +147,9 @@ ul {
     display: block;
   }
 
-  .li-com {
+  li a.li-com {
     background-color: #0099ff;
   }
-  .li-com:hover {
+  li a.li-com:hover {
     background-color: #000;
   }
