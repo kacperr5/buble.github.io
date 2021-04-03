@@ -147,9 +147,9 @@ ul {
     display: block;
   }
 
-  li a.li-com {
+  .ul-com {
     background-color: #0099ff;
   }
-  li a.li-com:hover {
+  .ul-com:hover {
     background-color: #000;
   }
