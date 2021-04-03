@@ -150,3 +150,6 @@ ul {
   .li-com {
     background-color: #0099ff;
   }
+  .li-com:hover {
+    background-color: #000;
+  }
