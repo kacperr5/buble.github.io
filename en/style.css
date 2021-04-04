@@ -1,4 +1,5 @@
 body {
+<<<<<<< Updated upstream
 font-family: 'Quicksand', sans-serif;
 font-size: 1rem;
 font-weight: 400;
@@ -97,54 +98,88 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+=======
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #34383c;
+  text-align: left;
+  margin: 0;
+  background: #F4F4F4;
+      
+>>>>>>> Stashed changes
+  }
+  .dark-mode {
+      background: #34383c;
+      color: aliceblue;
   }
   
-  li {
-    float: left;
+  
+  .navbar-brand {
+  display: inline-block;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  font-size: 33px;
+  line-height: inherit;
+  white-space: nowrap;
+  }
+  .d-inline-block {
+  display: inline-block!important;
+  }
+  .rounded-circle {
+  border-radius: 50%!important;
+  }
+  img {
+  vertical-align: middle;
+  border-style: none;
+  margin: 5px
   }
   
-  li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 20px 16px;
-    text-decoration: none;
+  
+  
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
   
-  li a:hover, .dropdown:hover .dropbtn {
-    background-color: #0099ff;
+  
+  
+  .topnav-right {
+    float: right;
+  }
+  .main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 1500px; /* Used in this example to enable scrolling */
   }
   
-  li.dropdown {
-    display: inline-block;
-  }
+  .material-icons {
+      padding: 0px 0;
+      text-align: center;
+      margin: 6px;
+      display: block;
+    }
   
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
   
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+  .h1 {
+      text-align: center;
+      text-align: center;
+      
   }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1;}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
+  .main2 {
+      padding: 16px;
+      margin-top: 60px;
+      text-align: center
   }
-
-  .ul-com {
-    background-color: #0099ff;
-  }
+<<<<<<< Updated upstream
 
   .blue-com {
     background-color: #0099ff;
@@ -221,3 +256,148 @@ display: flex;
    .com-item-use:hover {
     color: #333;
    }
+=======
+  
+  .main-logo {
+      height: 40%;
+      width: 40%;
+  }
+  
+  
+  .button-index {
+      margin-left: auto;
+      margin-right: auto;
+      
+  }
+  
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a, .dropbtn {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 20px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover, .dropdown:hover .dropbtn {
+      background-color: #0099ff;
+    }
+    
+    li.dropdown {
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {background-color: #f1f1f1;}
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
+    .ul-com {
+      background-color: #0099ff;
+    }
+  
+    .blue-com {
+      background-color: #0099ff;
+    }
+  
+   .com-item:hover {
+    color: #333;
+   }
+   .com-item {
+     margin: 0px;
+     display: block;
+   }
+  
+   .material-icons.md-36 { 
+     font-size: 36px; 
+    }
+  
+  .com-div {
+  height: 60px;
+  width: 800px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.26);
+  display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+    }
+  
+    .com-header {
+      color: #F4F4F4;
+      background-color: #333;
+      height: 80px;
+      width: 800px;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      
+      box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.26);
+      display: flex;
+          justify-content: space-between;
+          font-size: 25px;
+        }
+  
+  
+  
+  .col {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  
+    .col-1 {
+      flex-basis: 10%;
+    }
+    .col-2 {
+      flex-basis: 50%;
+    }
+    .col-3 {
+      flex-basis: 30%;
+    }
+  
+    .com-item-use {
+      background-color: #0099ff;
+      margin: 0px;
+     display: block;
+     color: #333;
+    }
+  
+  
+     .com-item-use:hover {
+      color: #333;
+     }
+>>>>>>> Stashed changes
