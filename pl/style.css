@@ -61,17 +61,12 @@ margin: 5px
 }
 
 .material-icons {
-    padding: 12px 0;
+    padding: 0px 0;
     text-align: center;
     margin: 6px;
-}
+    display: block;
+  }
 
-.material-icons:hover {
-    background: rgba(76, 175, 80, 0.0);
-    color: black;
-    transition: 0,75s;
-        
-}
 
 .h1 {
     text-align: center;
@@ -149,4 +144,20 @@ ul {
 
   .ul-com {
     background-color: #0099ff;
+  }
+
+  .blue-com {
+    background-color: #0099ff;
+  }
+
+ .com-item:hover {
+  background-color: #333;
+ }
+ .com-item {
+   margin: 0px;
+   display: block;
+ }
+
+ .material-icons.md-36 { 
+   font-size: 36px; 
   }
