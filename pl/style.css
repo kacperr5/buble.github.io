@@ -21,13 +21,12 @@ padding-bottom: .3125rem;
 font-size: 33px;
 line-height: inherit;
 white-space: nowrap;
+border-right-style: solid;
 }
 .d-inline-block {
 display: inline-block!important;
 }
-.rounded-circle {
-border-radius: 50%!important;
-}
+
 img {
 vertical-align: middle;
 border-style: none;
@@ -97,6 +96,9 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    position: fixed;
+  top: 0;
+  width: 100%;
   }
   
   li {
@@ -269,3 +271,23 @@ display: flex;
   .material-icons.md-20 {
     font-size: 20px; 
   }
+
+  .footer {
+    height: 200px;
+    width: 100%;
+    background: rgb(97, 97, 97);
+    display: inline-block;
+    color: #F4F4F4;
+    left: 0;
+    bottom: 0;
+    margin-top: 200px;
+    
+  }
+
+.footer-item {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.brand-name {
+  font-size: 25px;
+}
