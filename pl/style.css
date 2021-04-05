@@ -258,3 +258,14 @@ display: flex;
     color: #F4F4F4;
     transform: scale(1.1);
   }
+
+  .lang-sel {
+    margin-top: auto;
+    margin-bottom: auto;
+    float: right;
+    color: #333;
+  }
+
+  .material-icons.md-20 {
+    font-size: 20px; 
+  }
