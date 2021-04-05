@@ -218,38 +218,38 @@ body {
     }
   
   
-     .com-item-use:hover {
-      color: #333;
-     }
-
-     .home-button-1 {
-       margin-top: 40px;
-      background-color: #0099ff;
+    .home-button-1 {
+      margin-top: 40px;
+     background-color: #0099ff;
+     border: 2px solid #0099ff;
+     border-radius: 10px;
+     display:inline-block;
+     cursor:pointer;
+     color:#F4F4F4;
+     padding: 16px 35px;
+     text-decoration:none;
+     margin-right: 5px;
+     transition: .3s linear;
+    }
+  
+    .home-button-2 {
+     border-radius: 10px;
       border: 2px solid #0099ff;
-      border-radius: 10px;
-      display:inline-block;
-      cursor:pointer;
-      color:#F4F4F4;
+      display: inline-block;
+      cursor: pointer;
+      color: #0099ff;
       padding: 16px 35px;
-      text-decoration:none;
-      margin-right: 5px;
-     }
-
-     .home-button-2 {
-      border-radius: 10px;
-       border: 2px solid #0099ff;
-       display: inline-block;
-       cursor: pointer;
-       color: #0099ff;
-       padding: 16px 35px;
-       text-decoration: none;
-     }
-     .home-button-1:hover {
-       background-color: #F4F4F4;
-       color: #0099ff;
-     }
-
-     .home-button-2:hover {
-       background-color: #0099ff;
-       color: #F4F4F4;
-     }
+      text-decoration: none;
+      transition: .3s linear;
+    }
+    .home-button-1:hover {
+      background-color: #F4F4F4;
+      color: #0099ff;
+      transform: scale(1.1);
+    }
+  
+    .home-button-2:hover {
+      background-color: #0099ff;
+      color: #F4F4F4;
+      transform: scale(1.1);
+    }
