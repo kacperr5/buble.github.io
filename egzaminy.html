@@ -25,10 +25,12 @@
           color: black;
           font-family: "Courier New", Courier, monospace;
           font-size: 25px;
-          text-shadow: -1px -1px 0 #aaa, 1px -1px 0 #aaa, -1px 1px 0 #aaa, 1px 1px 0 #aaa;
+          
         }
         
-        
+        .textt {
+            backdrop-filter: blur(10px);
+        }
         
         .middle {
           position: absolute;
@@ -48,9 +50,9 @@
         <div class="bgimg">
           
           <div class="middle">
-            <h1>Egzamin ósmoklasisty za...</h1>
+            <h1 class="textt">Egzamin ósmoklasisty za...</h1>
             <hr style="color: black;">
-            <p id="demo"></p>
+            <p id="demo" class="textt"></p>
           </div>
          
         </div>
