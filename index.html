@@ -18,7 +18,7 @@
       <a href="/add" target="_blank">Add bot</a>
       <a href="https://discord.gg/NbkaxmjXgb" target="_blank">Support</a>
       <a href="/commands.html">Commands</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="material-icons">menu</i>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="material-icons" id="menu1">menu</i>
         
       </a>
     </div>
@@ -65,6 +65,12 @@
         x.className += " responsive";
       } else {
         x.className = "topnav";
+      }
+      var y = document.getElementById("menu1");
+      if (y.innerHTML === "menu") {
+        y.innerHTML = "close";
+      } else {
+        y.innerHTML = "menu";
       }
     }
 
