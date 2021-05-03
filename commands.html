@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8" />
+<title>Buble | Commands</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<link rel="icon" href="/icon-bublev2.png"> </head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="/index.html"><img src="logo.png" width="20px" alt="logo"></a>
+        <a href="/add">Add bot</a>
+        <a href="https://discord.gg/NbkaxmjXgb">Support</a>
+        <a href="/commands.html">Commands</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="material-icons">menu</i>
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+<div class="com-tabs-group">
+
+    <div class="vertical-menu-2">
+        <a href="javascript:void(0);" onclick="openCity(event, 'London')" class="tablinks" >Moderation</a>
+        <a href="javascript:void(0);" onclick="openCity(event, 'Paris')" class="tablinks" >Useful</a>
+        <a href="javascript:void(0);" onclick="openCity(event, 'Tokyo')" class="tablinks" >Other</a>
+        
+      </div>
+
+
+
+<div class="tabcontent" style="display: block;"></div>
+    <div id="London" class="tabcontent">
+        <div class="com-header">
+            <div class="col col-1">Name</div>
+            <div class="col col-2">Description</div>
+            <div class="col col-3">Usage</div>
+        
+        </div>
+        
+        
+        <div class="com-div">
+            <div class="col col-1">ban</div>
+            <div class="col col-2">Baning define user</div>
+            <div class="col col-3">b!ban (@user) [reason]</div>
+        </div>
+        
+            <div class="com-div">
+                <div class="col col-1">kick</div>
+                <div class="col col-2">Kicking define user</div>
+                <div class="col col-3">b!kick (@user) [reason]</div>
+        
+            </div>
+        
+            <div class="com-div">
+                <div class="col col-1">clear</div>
+                <div class="col col-2">Deleting defined amount of messages (2-100)</div>
+                <div class="col col-3">b!clear (amount)</div>
+        
+            </div>
+        
+      </div>
+      
+      <div id="Paris" class="tabcontent">
+        <div class="com-header">
+            <div class="col col-1">Name</div>
+            <div class="col col-2">Description</div>
+            <div class="col col-3">Usage</div>
+        
+        </div>
+        
+        
+        <div class="com-div">
+            <div class="col col-1">serverinfo</div>
+            <div class="col col-2">Information about server</div>
+            <div class="col col-3">b!serverinfo</div>
+        </div>
+        
+            <div class="com-div">
+                <div class="col col-1">corona</div>
+                <div class="col col-2">Covid-19 statystic</div>
+                <div class="col col-3">b!corona (all / country)</div>
+        
+            </div>
+    
+            <div class="com-div">
+                <div class="col col-1">holiday</div>
+                <div class="col col-2">how much time is left until holidays in Poland</div>
+                <div class="col col-3">b!holiday</div>
+        
+            </div>
+    
+        
+            <div class="com-div">
+                <div class="col col-1">help</div>
+                <div class="col col-2">All the most important links and commands</div>
+                <div class="col col-3">b!help [command]</div>
+        
+            </div>
+        
+      </div>
+      
+      <div id="Tokyo" class="tabcontent">
+        <div class="com-header">
+            <div class="col col-1">Name</div>
+            <div class="col col-2">Description</div>
+            <div class="col col-3">Usage</div>
+        
+        </div>
+        
+        
+        <div class="com-div">
+            <div class="col col-1">ping</div>
+            <div class="col col-2">Shows how big is the ping of the bot</div>
+            <div class="col col-3">b!ping</div>
+        </div>
+        
+            <div class="com-div">
+                <div class="col col-1">info</div>
+                <div class="col col-2">Bot Information</div>
+                <div class="col col-3">b!info</div>
+        
+            </div>
+        
+            <div class="com-div">
+                <div class="col col-1">invite</div>
+                <div class="col col-2">Sends an invitation to the bot server</div>
+                <div class="col col-3">b!invite</div>
+        
+            </div>
+        
+            <div class="com-div">
+                <div class="col col-1">stat</div>
+                <div class="col col-2">Stats of bot</div>
+                <div class="col col-3">b!stat</div>
+        
+            </div>
+      </div>
+
+      <div class="vertical-menu">
+        <a href="javascript:void(0);" onclick="openCity(event, 'London')" class="tablinks" >Moderation</a>
+        <a href="javascript:void(0);" onclick="openCity(event, 'Paris')" class="tablinks" >Useful</a>
+        <a href="javascript:void(0);" onclick="openCity(event, 'Tokyo')" class="tablinks" >Other</a>
+        
+      </div>
+
+</div>
+      
+  
+
+
+</body>
+
+<script>
+
+function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+
+
+
+    function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</html>
