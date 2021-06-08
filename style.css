@@ -459,3 +459,12 @@ color: white;
             .licz {
         background-color: #F4F4F4;
       }
+      @media screen and (min-width: 1585px) {
+      
+      body {
+        margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        width: 1300px;
+      }
+    }
