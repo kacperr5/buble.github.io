@@ -305,6 +305,10 @@ color: white;
         font-size: 15px;
       }
 
+      .com-div:hover {
+background-color: #16171ab7;
+      }
+
       .com-header {
         color: #F4F4F4;
         border-bottom: 1px solid #16171a;
