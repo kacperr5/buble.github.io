@@ -19,43 +19,61 @@
 	<link rel="icon" href="logoo.png"> </head>
   <body>
     
-    <div class="topnav" id="myTopnav">
-      <a href="https://buble.xyz/" id="menu2"><img src="logo.png" width="20px" alt="logo" class="logo-img"></a>
-      <a href="/add" target="_blank">Add bot</a>
-      <a href="https://discord.gg/NbkaxmjXgb" target="_blank">Support</a>
-      <a href="/commands">Commands</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="material-icons" id="menu1">menu</i>
-        
-      </a>
+  
+    
+
+    <div class="v2-alert">
+
+      
+      
+      
+      
+      <div class="topnav" id="myTopnav">
+        <a href="https://buble.xyz/" id="menu2"><img src="logo.png" width="20px" alt="logo" class="logo-img"></a>
+        <a href="/add" target="_blank">Add bot</a>
+        <a href="https://discord.gg/NbkaxmjXgb" target="_blank">Support</a>
+        <a href="/commands">Commands</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="material-icons" id="menu1">menu</i>
+          
+        </a>
+      </div>
+      
+      
+      
+      
+      <p style="text-align: center; margin-top: 25px;" class="v2-alert-text" id="coming" >V2 is coming...</p>
     </div>
 
-
-<div class="main-m">
-  <h1 class="title-1">buble</h1>
-  
-  <p class="te-1">Your dream discord bot</p>
-  <a href="/add.html" class="home-button-1" target="_blank">Add it to your server ></a>
-</div>
-    
-<p class="te-2 a1">Why buble?</p>
-
-<div class="box-group">
-
-  
-  <div class="main-box">
-<p class="t-1">Moderation</p>
-<p class="t-2">With moderation commands, you can manage the server more easily.</p>
-<img src="Screenshot cutout.png" class="img-1">
-  </div>
-  <p class="te-2 a2">Why buble?</p>
-  <div class="main-box-2">
-    <p class="t-1" style="margin-right: 20px; margin-top: 0px;">Useful</p>
-    <p class="t-2" style="margin-right: 20px;">You can easily find out a lot about the server.</p>
-    <img src="Screenshot2t.png" class="img-2">
-    
+      <div class="main-m">
+        <h1 class="title-1">buble</h1>
+        
+        <p class="te-1">Your dream discord bot</p>
+        <a href="/add.html" class="home-button-1" target="_blank">Add it to your server ></a>
       </div>
+          
+      <p class="te-2 a1">Why buble?</p>
+      
+      <div class="box-group">
+      
+        
+        <div class="main-box">
+      <p class="t-1">Moderation</p>
+      <p class="t-2">With moderation commands, you can manage the server more easily.</p>
+      <img src="Screenshot 2021-07-12 at 20.25.33.png" class="img-1">
+        </div>
+        <p class="te-2 a2">Why buble?</p>
+        <div class="main-box-2">
+          <p class="t-1" style="margin-right: 20px; margin-top: 0px;">Useful</p>
+          <p class="t-2" style="margin-right: 20px;">You can easily find out a lot about the server.</p>
+          <img src="Screenshot2t.png" class="img-2">
+          
+            </div>
+          
+      </div>
+
     
-</div>
+
+
 
 
 
@@ -84,7 +102,15 @@
       } else {
         y.innerHTML = `Home`;
       }
+      var y = document.getElementById("coming");
+      if (y.innerHTML === `V2 is coming...`) {
+        y.innerHTML = ``;
+      } else {
+        y.innerHTML = `V2 is coming...`;
+      }
     }
+
+    
 
     </script>
   </html>
