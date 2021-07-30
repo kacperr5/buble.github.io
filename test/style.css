@@ -124,7 +124,7 @@ body {
      color: rgba(216, 214, 214, 0.623);
      display: block;
      margin-left: auto;
-   
+     transition: background 0.2s linear;
    }
 
    .t-1 {
