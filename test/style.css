@@ -118,6 +118,7 @@ body {
    .main-box {
      height: 300px;
      width: 800px;
+     width: clamp(300px, 800px, 800px);
      background-color: var(--div);
      border-radius: 10px;
      margin-right: auto;
