@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+
+<head>
+  
+    <meta content="buble" property="og:title">
+  <meta content="Discord Bot" property="og:description">
+    <meta content="https://buble.xyz" property="og:url">
+    <meta content="https://buble.xyz/logoo.png" property="og:image">
+    <meta content="#0099ff" data-react-helmet="true" name="theme-color">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="UTF-8" />
+	<title>Buble Discord Bot</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+	<link rel="icon" href="logoo.png"> </head>
+  <body>
+    
+  
+    
+
+
+      
+      <div class="v2-alert">
+        <div class="topnav" id="myTopnav">
+          <a href="https://buble.xyz/" id="menu2"><img src="logo.png" width="20px" alt="logo" class="logo-img"></a>
+          <a href="/add" target="_blank">Add bot</a>
+          <a href="https://discord.gg/NbkaxmjXgb" target="_blank">Support</a>
+          <a href="/commands">Commands</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="material-icons" id="menu1">menu</i>
+            
+          </a>
+      
+        </div>
+
+
+
+        <p style="text-align: center; margin-top: 25px;" class="v2-alert-text" id="coming" >V2 is here</p>
+      </div>
+        
+   
+      
+      
+      
+      
+      
+     
+    <a href="javascript:void(0);" onclick="toggleTheme()">click</a>
+
+      <div class="main-m">
+        <h1 class="title-1">buble</h1>
+        
+        <p class="te-1">Your dream discord bot</p>
+        <a href="/add.html" class="home-button-1" target="_blank">Add it to your server ></a>
+      </div>
+          
+      <p class="te-2 a1">Why buble?</p>
+      
+      <div class="box-group">
+      
+        
+        <div class="main-box">
+          <div style="display: inline-block;">
+            <p class="t-1" style="display: inherit;">Moderation</p>
+            <img src="buble-new-icon.png" width="80px" style="display: inherit;">
+          </div>
+   
+      
+      <p class="t-2">With moderation commands, you can manage the server more easily.</p>
+      <img src="Screenshot 2021-07-12 at 20.25.33.png" class="img-1">
+        </div>
+
+        
+        
+           
+
+            <div class="main-box-3">
+              <p class="t-1">More new features coming soon</p>
+       
+              <img src="buble-surprise-icon.png" width="220px">
+        
+            </div>
+          
+      </div>
+
+    
+
+
+
+
+
+
+
+
+
+  </body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+      var y = document.getElementById("menu1");
+      if (y.innerHTML === "menu") {
+        y.innerHTML = "close";
+      } else {
+        y.innerHTML = "menu";
+      }
+      var y = document.getElementById("menu2");
+      if (y.innerHTML === `Home`) {
+        y.innerHTML = `<img src="logo.png" width="20px" alt="logo">`;
+      } else {
+        y.innerHTML = `Home`;
+      }
+      var y = document.getElementById("coming");
+      if (y.innerHTML === `V2 is coming...`) {
+        y.innerHTML = ``;
+      } else {
+        y.innerHTML = `V2 is coming...`;
+      }
+    }
+   
+  const themeMap = {
+  dark: "light",
+  light: "dark"
+};
+
+const theme = localStorage.getItem('theme')
+  || (tmp = Object.keys(themeMap)[0],
+      localStorage.setItem('theme', tmp),
+      tmp);
+const bodyClass = document.body.classList;
+bodyClass.add(theme);
+
+function toggleTheme() {
+  const current = localStorage.getItem('theme');
+  const next = themeMap[current];
+
+  bodyClass.replace(current, next);
+  localStorage.setItem('theme', next);
+}
+
+
+    </script>
+  </html>
