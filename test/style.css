@@ -20,7 +20,7 @@ body {
     margin: 0;
     background: var(--background);
     transition: background 1s;
-    transition: color 1s;
+ 
     }
 .abcd {
   transition: background 1s;
