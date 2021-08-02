@@ -1,123 +1,80 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>Egzaminy ósmoklasisty</title>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="preconnect" href="https://fonts.gstatic.com"> 
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<style>
+#mydiv {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+}
 
-        
-    </head>
-    <style>
-        .card-command {
-            border: 1px solid #373737;
-            background: #373737;
-            border-radius: 10px;
-            padding: 10px;
-            width: 300px;
-            height: 200px;
-            text-align: center;
-            margin-top: 50px;
-           margin-left: 50px;
-            
-        }
-        .center-all {
-            margin-left: auto;
-            margin-right: auto;
-            display: flex;
-  flex-wrap: wrap;
-        }
-        p.cmd {
-            margin: 0;
-           
-            color: white;
-        }
-    </style>
-    <body>
-    <h2>Komendy</h2>
-    <div class="center-all">
-            <div class="card-command">
-                <h5>BOT</h5>
-                    <p class="cmd">dashboard</p>
-                    <p class="cmd">help</p>
-                    <p class="cmd">info</p>
-                    <p class="cmd">invite</p>
-                    <p class="cmd">ping</p>
-            </div>
-            <div class="card-command">
-                <h5>EKONOMIA</h5>
-                    <p class="cmd">balance</p>
-                    <p class="cmd">baltop</p>
-                    <p class="cmd">crime</p>
-                    <p class="cmd">deposit</p>
-                    <p class="cmd">pay</p>
-                    <p class="cmd">store</p>
-                    <p class="cmd">withdraw</p>
-                    <p class="cmd">work</p>
-            </div>
-            <div class="card-command">
-                <h5>INFORMACYJNE</h5>
-                    <p class="cmd">donate</p>
-                    <p class="cmd">perms</p>
-                    <p class="cmd">rank</p>
-                    <p class="cmd">serverinfo</p>
-                    <p class="cmd">userinfo</p>
-            </div>
-            <div class="card-command">
-                <h5>KONFIGURACJA</h5>
-                    <p class="cmd">cleverbot</p>
-                    <p class="cmd">levels</p>
-                    <p class="cmd">messagelog</p>
-                    <p class="cmd">setgoodbye</p>
-                    <p class="cmd">setprefix</p>
-                    <p class="cmd">setwelcome</p>
-                    <p class="cmd">snipeblock</p>
-                    <p class="cmd">tickets</p>
-            </div>
-            <div class="card-command">
-                <h5>MINIGRY</h5>
-                    <p class="cmd">10s</p>
-            </div>
-            <div class="card-command">
-                <h5>MODERACYJNE</h5>
-                    <p class="cmd">ban</p>
-                    <p class="cmd">bn</p>
-                    <p class="cmd">kick</p>
-                    <p class="cmd">tempban</p>
-            </div>
-            <div class="card-command">
-                <h5>NARZĘDZIA</h5>
-                    <p class="cmd">coronavirus</p>
-                    <p class="cmd">discrim</p>
-                    <p class="cmd">embed</p>
-                    <p class="cmd">giveaway</p>
-                    <p class="cmd">love</p>
-                    <p class="cmd">minesweeper</p>
-                    <p class="cmd">nanopool</p>
-                    <p class="cmd">poll</p>
-                    <p class="cmd">qrcode</p>
-                    <p class="cmd">randomcase</p>
-                    <p class="cmd">reverse</p>
-                    <p class="cmd">rr</p>
-                    <p class="cmd">snipe</p>
-                    <p class="cmd">sn</p>
-                    <p class="cmd">weather</p>
-                    <p class="cmd">youtube</p>
-            </div>
-            <div class="card-command">
-                <h5>ZDJĘCIA</h5>
-                    <p class="cmd">batmanslap</p>
-                    <p class="cmd">changemymind</p>
-                    <p class="cmd">firsttime</p>
-                    <p class="cmd">npc</p>
-                    <p class="cmd">targetacquired</p>
-                    <p class="cmd">water</p>
-            </div>
-    </div>
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}
+</style>
+<body>
 
+<h1>Draggable DIV Element</h1>
+
+<p>Click and hold the mouse button down while moving the DIV element</p>
+
+<div id="mydiv">
+  <div id="mydivheader">Click here to move</div>
+  <p>Move</p>
+  <p>this</p>
+  <p>DIV</p>
+</div>
+
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("mydiv"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
 
 </body>
-
 </html>
