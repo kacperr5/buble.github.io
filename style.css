@@ -553,7 +553,7 @@ background-color: #16171ab7;
 
   .mydiv {
     position: absolute;
-    z-index: 9;
+   
     background-color: #24262b;
     text-align: center;
    border-radius: 10px;
@@ -562,7 +562,7 @@ background-color: #16171ab7;
   .mydivheader {
     padding: 10px;
     cursor: move;
-    z-index: 10;
+
    
     color: #fff;
  
