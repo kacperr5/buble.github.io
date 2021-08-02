@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html>
 <style>
-#mydiv {
-  position: absolute;
-  z-index: 9;
-  background-color: #f1f1f1;
-  text-align: center;
-  border: 1px solid #d3d3d3;
-}
 
-#mydivheader {
-  padding: 10px;
-  cursor: move;
-  z-index: 10;
-  background-color: #2196F3;
-  color: #fff;
-}
+#mydiv {
+    position: absolute;
+    z-index: 9;
+    background-color: #24262b;
+    text-align: center;
+   border-radius: 10px;
+  }
+  
+  #mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+   
+    color: #fff;
+ 
+  }
+  
+
 </style>
 <body>
 
-<h1>Draggable DIV Element</h1>
 
-<p>Click and hold the mouse button down while moving the DIV element</p>
 
 <div id="mydiv">
   <div id="mydivheader">Click here to move</div>
-  <p>Move</p>
-  <p>this</p>
-  <p>DIV</p>
+ 
 </div>
 
 <script>
@@ -74,6 +74,39 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
+
+
+
+
+
+
+var countDownDate = new Date("Aug 10, 2021 23:59:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+ // Display the result in an element with id="demo"
+ document.getElementById("mydivheader").innerHTML = days + "dni " + hours + "godzin "
+  + minutes + "minut " + seconds + "sekund ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("mydivheader").innerHTML = "project buble has ended";
+  }
+}, 1000);
 </script>
 
 </body>
