@@ -56,13 +56,13 @@
                  $.ajax({
                      url: $("#url").val(),
                      type: "POST",
-                     data: JSON.stringify(JSON.parse($("{
+                     data: ($("{
   "username": "",
   "avatar_url": "",
   "content": "#code",
   "embeds": [],
   "components": []
-}").val())),
+}").val()),
                      complete: function () { alert("Success") },
                      headers: {
                          'Content-Type': 'application/json',
